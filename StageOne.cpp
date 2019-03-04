@@ -12,9 +12,9 @@ HRESULT StageOne::Init()
 	OBJECTMANAGER->AddObject(ObjectType::Enum::Object, _player);
 
 	//잠자리 생성
-	//FlyBug* _flybug = new FlyBug("flybug", { WINSIZEX / 2 + 300, 200 }, { 200, 100 }, GameObject::Pivot::Center);
+	FlyBug* _flybug = new FlyBug("flybug", { WINSIZEX / 2 + 300, 200 }, { 200, 100 }, GameObject::Pivot::Center);
 	//잠자리 객체 추가하기
-	//OBJECTMANAGER->AddObject(ObjectType::Enum::Object, _flybug);
+	OBJECTMANAGER->AddObject(ObjectType::Enum::Object, _flybug);
 
 	//게 생성
 	Crab* _crab = new Crab("crab", { 1060, WINSIZEY / 2 + 175 }, { 100, 150 }, GameObject::Pivot::Center);
